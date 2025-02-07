@@ -39,11 +39,39 @@ namespace gitfeladatgyak
 			film2.MufajModositas("vígdráma");
 
             Console.WriteLine();
+            Console.WriteLine();
 
 
             Console.WriteLine("Változtatott adatok: ");
             Console.WriteLine("\n" + film1.ToString() + "\n" + "új hossz:" + film1.Hossznoveles(50));
 			Console.WriteLine("\n" + film2.ToString() + "\n" + "új hossz:" + film2.Hossznoveles(60));
+
+			Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("A harmadik feladat-Videójáték karakter");
+
+			Videójáték_karakter karak1 = new("Naruto", 3, 200, 100);
+			Videójáték_karakter karak2 = new("Pókember", 30); //kijelöl, quick action és new
+
+
+			Console.WriteLine(karak1.ToString() + "\n" + karak2.ToString());
+			Console.WriteLine();
+			karak1.Tamadas();
+			karak2.Tamadas();
+            Console.WriteLine();
+            Console.WriteLine(karak1.Nev);
+			karak1.Szintlepes();
+			Console.WriteLine();
+			Console.WriteLine(karak2.Nev);
+			karak2.Szintlepes();
+
+			Console.WriteLine();
+
+
+			Console.WriteLine("Változtatott adatok: ");
+			Console.WriteLine("\n" + karak1.ToString() + "\n" + "új gyógyulás:" + karak1.Gyogyulas(30));
+			Console.WriteLine("\n" + karak2.ToString() + "\n" + "új gyógyulás:" + karak2.Gyogyulas(60));
 		}
 	}
 }
