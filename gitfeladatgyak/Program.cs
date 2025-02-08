@@ -98,6 +98,35 @@ namespace gitfeladatgyak
             Console.WriteLine("Változtatott adatok: ");
             Console.WriteLine("\n" + urhajo1.ToString() + "\n" + "Tankolás:" + urhajo1.Tankolas(45) + "Landolási sebesség:" + urhajo1.Landolas());
             Console.WriteLine("\n" + urhajo2.ToString() + "\n" + "Tankolás:" + urhajo2.Tankolas(60) + "Landolási sebesség:" + urhajo2.Landolas());
+
+
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("Az ötödik feladat-KémKüldetés");
+
+            KemKuldetes kuld1 = new("Nagyfutas", "Anglia", 30, 80);
+            KemKuldetes kuld2 = new("Énfeladat", "Magyarország");
+
+
+            Console.WriteLine(kuld1.ToString() + "\n" + kuld2.ToString());
+            Console.WriteLine();
+            Console.WriteLine("Küldetés kezdete:");
+            Console.WriteLine();
+            Console.WriteLine(kuld1.Kodnev);
+            kuld1.KuldetesInditasa();
+            Console.WriteLine();
+            Console.WriteLine(kuld2.Kodnev);
+            kuld2.KuldetesInditasa();
+            Console.WriteLine();
+
+            Console.WriteLine();
+
+
+            Console.WriteLine("Változtatott adatok: ");
+            Console.WriteLine("\n" + kuld1.ToString() + "\n" + "Űj veszély:" + kuld1.VeszelySzintNovelese(30) + "\n" + "Új Siker esély:" + kuld1.SikerEsejNovelese(14));
+            Console.WriteLine("\n" + kuld2.ToString() + "\n" + "Új veszély:" + kuld2.VeszelySzintNovelese(40) + "\n" +  "Új Siker esély:" + kuld2.SikerEsejNovelese(23));
         }
 	}
 }
