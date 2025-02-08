@@ -72,6 +72,32 @@ namespace gitfeladatgyak
 			Console.WriteLine("Változtatott adatok: ");
 			Console.WriteLine("\n" + karak1.ToString() + "\n" + "új gyógyulás:" + karak1.Gyogyulas(30));
 			Console.WriteLine("\n" + karak2.ToString() + "\n" + "új gyógyulás:" + karak2.Gyogyulas(60));
-		}
+
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("A negyedik feladat-Űrhajó");
+
+            Urhajo urhajo1 = new("Kishajó", 100, 50, 400);
+            Urhajo urhajo2 = new("Énhajó", 200); 
+
+
+            Console.WriteLine(urhajo1.ToString() + "\n" + urhajo2.ToString());
+            Console.WriteLine();
+            Console.WriteLine("Elindulás utáni adatok:");
+            Console.WriteLine(urhajo1.Nev);
+            urhajo1.Indulas();
+            Console.WriteLine(urhajo2.Nev);
+            urhajo2.Indulas();
+            Console.WriteLine();
+
+            Console.WriteLine();
+
+
+            Console.WriteLine("Változtatott adatok: ");
+            Console.WriteLine("\n" + urhajo1.ToString() + "\n" + "Tankolás:" + urhajo1.Tankolas(45) + "Landolási sebesség:" + urhajo1.Landolas());
+            Console.WriteLine("\n" + urhajo2.ToString() + "\n" + "Tankolás:" + urhajo2.Tankolas(60) + "Landolási sebesség:" + urhajo2.Landolas());
+        }
 	}
 }
